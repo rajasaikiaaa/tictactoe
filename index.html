@@ -1,36 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe by Raja Saikia</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="msg-container hide">
-        <p id="msg">Winner Winner Chicken Dinner</p>
-        <button id="new-btn">Notun Ekta</button>
-    </div>
+    <header>
+        <div class="container">
+            <h1>Tic Tac Toe</h1>
+            <p>By Raja Saikia - A fun game to test your strategy!</p>
+        </div>
+    </header>
+
     <main>
-        <h1>Tic Tac Toe by Raja </h1>
+        <div class="msg-container hide">
+            <p id="msg">Player X's Turn</p>
+            <button id="new-btn">New Game</button>
+        </div>
         <div class="container">
             <div class="game">
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
+                <button class="box" data-index="0"></button>
+                <button class="box" data-index="1"></button>
+                <button class="box" data-index="2"></button>
+                <button class="box" data-index="3"></button>
+                <button class="box" data-index="4"></button>
+                <button class="box" data-index="5"></button>
+                <button class="box" data-index="6"></button>
+                <button class="box" data-index="7"></button>
+                <button class="box" data-index="8"></button>
             </div>
+            <button id="reset-btn">Reset Game</button>
         </div>
-        <button id="reset-btn">Firstor pora </button>
     </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Raja Saikia. All rights reserved.</p>
+        </div>
+    </footer>
+
     <script src="app.js"></script>
 </body>
-
 </html>
